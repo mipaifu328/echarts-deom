@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>统计数据</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./css/welcome.css">
+</head>
+
+<body>
+    <div class="container">
+			<div id="mapContainer" class="map-container"></div> 
+			<div class="index-title">
+				<div class="index-title-txt">南沙第一中学</div>
+			</div>
+			<div class="date-box"></div>
+			<div class="dynamic-box">
+				<div class="index-box-title">
+					<div class="cn-txt">校园动态</div>
+					<div class="en-txt">Campus dynamic</div>
+				</div>
+				<div id="newList" class="index-box-content"></div>
+			</div>
+			<div class="health-box">
+				<div class="index-box-title">
+					<div class="cn-txt">学生健康状况</div>
+					<div class="en-txt">Student health</div>
+				</div>
+				<div class="index-box-content" id="healthChart"></div>
+			</div>
+			<div class="alarm-box">
+				<div class="index-box-title">
+					<div class="cn-txt">学生异常报警系统</div>
+					<div class="en-txt">Student abnormality</div>
+				</div>
+				<div class="index-box-content" id="alarmChart"></div>
+			</div>
+			<div class="attendance-box">
+				<div class="index-box-title">
+					<div class="cn-txt">出勤率</div>
+					<div class="en-txt">Attendance</div>
+				</div>
+				<div class="index-box-content">
+					<div id="attendanceChart" class="attendance-chart"></div>
+					<div class="chart-center">
+						<img src="./images/index-pie-icon.png" />
+						<div class="chart-center-count">--</div>总人数
+					</div>
+					<div class="attendance-detail"></div>
+				</div>
+			</div>
+			<div class="mask-left"></div>
+			<div class="mask-right"></div>
+		</div>
+	<script src="./js/jquery.min.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="https://webapi.amap.com/maps?v=1.4.10&key=f48db6139ce87d7c281b64699f64e9d4"></script> 
+	<script src="js/echarts-amap.min.js"></script>
+	<script src="js/welcome.js"></script>
+	
+</body>
+</html>

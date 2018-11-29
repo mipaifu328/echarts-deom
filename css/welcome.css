@@ -1,0 +1,248 @@
+/* welcome頁面 */
+html{
+	font-family: "微软雅黑";
+	color: #a0ecff;
+	background-color: #033447;
+	user-select: none;
+}
+html,
+body,
+.container,
+.map-container {
+	margin: 0;
+	width:100%;
+	height: 100%;
+}  
+body{
+	 visibility: hidden;
+}
+/* 标题 */
+.index-title {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 6.63rem;
+	height: 0.648rem;
+	transform: translateX(-50%);
+	text-align: center;
+	background: url(../images/index-title-bg.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 2;
+}
+.index-title-txt{
+	margin-top: 0.58rem;
+	font-size: 0.22rem;
+}
+/* 时间 */
+.date-box{
+	position: absolute;
+	top: 0.18rem;
+	left: 0.18rem;
+	font-size: 0.22rem;
+	z-index: 2;
+}
+/* 校园动态 */
+.dynamic-box{
+	position: absolute;
+	top: 0.8rem;
+	left: 0.18rem;
+	z-index: 2;
+}
+.index-box-title .cn-txt{
+	font-size: 0.24rem;	
+}
+.index-box-title .en-txt{
+	font-size: 0.2rem;
+}
+
+.dynamic-box .index-box-content{
+	margin-top: 0.08rem;
+	margin-left: -0.04rem;
+	width: 4.867rem;
+	height: 3.41rem;
+	background: url(../images/index-dynamic-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.dynamic-box ul{
+	list-style: none;
+	margin: 0;
+	padding: 0.3rem 0.4rem;
+}
+.dynamic-box li{
+	width: 100%;
+	height: 0.4rem;
+	padding-left: 0.5rem;
+	line-height: 0.4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.16rem;
+	background: url(../images/index-list-bg.png) no-repeat left center;
+	background-size: 0.468rem 0.432rem;
+	box-sizing: border-box;
+}
+.dynamic-box li a{
+	color: #a0ecff;
+	font-size: 0.16rem;
+	text-decoration: none;
+}
+.dynamic-box li a:hover{
+	color: #67effe;
+}
+
+/* 学生健康状况 */
+.health-box{
+	position: absolute;
+	bottom: 0.2rem;
+	left: 0.18rem;
+	z-index: 2;
+}
+.health-box .index-box-content{
+	margin-top: -0.24rem;
+	margin-left: -0.04rem;
+	width: 4.867rem;
+	height: 3.41rem;
+	background: url(../images/index-health-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 学生异常报警系统 、勤率*/
+.alarm-box{
+	position: absolute;
+	top: 0.8rem;
+	right: 0.18rem;
+	z-index: 2;
+}
+.attendance-box{
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.18rem;
+	z-index: 2;
+}
+.alarm-box .index-box-title,
+.attendance-box .index-box-title{
+	text-align: right;
+}
+.alarm-box .index-box-content,
+.attendance-box .index-box-content{
+	margin-top: -0.2rem;
+	margin-right: -0.05rem;
+	width: 4.867rem;
+	height: 3.41rem;
+	background: url(../images/index-right-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.attendance-chart{
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 60%;
+	height: 100%;
+}
+.attendance-detail{
+	float: left;
+	padding-top: 0.7rem;
+	width: 40%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.attendance-items{
+	font-size: 0.18rem;
+}
+.attendance-items-color{
+	display: inline-block;
+	margin-bottom: 0.02rem;
+	margin-right: 0.04rem;
+	width: 0.28rem;
+	height: 0.1rem;
+	background-color: #b7effe;
+	border-radius: 0.04rem;
+}
+.attendance-items-count{
+	color: #facc99;
+	text-indent: 0.32rem;
+	font-size: 0.26rem;
+}
+.attendance-box .index-box-content{
+	position: relative;
+}
+.chart-center{
+	position: absolute;
+	left: 0.26rem;
+	bottom: 0.52rem;
+	width: 2.3rem;
+	height: 2.3rem;
+	border-radius: 50%;
+	font-size: 0.22rem;
+	text-align: center;
+	border: 0.04rem dashed #254f66;
+}
+.chart-center img{
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	display: block;
+	width: 0.612rem;
+	height: 0.648rem;
+}
+.chart-center-count{
+	font-size:0.3rem;
+}
+
+/* 地图样式  */
+.map-container{
+	visibility: hidden;
+}
+.amap-overlay-text-container,
+.amap-info-contentContainer{
+	width: 2.36rem;
+	padding: 0.2rem;
+	font-size: 0.18rem;
+	border: none;
+	background:transparent url(../images/index-tips-bg.png) no-repeat;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+}
+.amap-overlay-text-container .tips-title,
+.amap-info-contentContainer .tips-title{
+	font-size: 0.22rem;
+	margin-bottom: 0.06rem;
+}
+.amap-overlay-text-container .tips-txt,
+.amap-info-contentContainer .tips-txt{
+	word-break: normal;
+	white-space: normal;
+}
+.amap-overlay-text-container .tips-list,
+.amap-info-contentContainer .tips-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 0.3rem ;
+}
+.tips-list span{
+	color: #facc99;
+}
+
+/* 遮罩层样式 */
+.mask-left{
+	position: absolute;
+	top:0;
+	left:0;
+	right:72%;
+	bottom: 0;
+	background: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1)); /* 标准的语法（必须放在最后） */
+}
+.mask-right{
+	position: absolute;
+	top:0;
+	left:72%;
+	right:0;
+	bottom: 0;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)); /* 标准的语法（必须放在最后） */
+}
